@@ -1,0 +1,632 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+nav{
+    background-color: #22395D;
+    height: 75px;
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%; 
+    padding-right: 5%;
+    padding-left: 1%;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    margin-left: 20px;
+}
+#solar{
+    color: white;
+    font-size: 40px;
+    background-color:#009CFF;
+    height: 75px;
+    padding-top: 10px;
+}
+label{
+    color: white;
+    font-size: 30px;
+    display: none;
+}
+#click{
+    display: none;
+}
+.hero{
+    background: url(HS.jpg) no-repeat center center / cover;
+    height: 100vh;
+}
+.hero .main-content{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.hero .main-content h2{
+    color: white;
+    padding-top: 18%;
+}
+.hero .main-content h1{
+    color: white;
+    font-size: 500%;
+    padding-top: 3%;
+    padding-left: 15%;
+    padding-right: 15%;   
+}
+.hero .main-content .btn{
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    width: 200px;
+    height: 50px;
+    font-size: 25px;
+    font-weight: 700px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 60px;
+}
+
+/* -- about */
+.about img{
+    width: 90%;
+    height: 85vh;
+    padding-left: 4%;    
+}
+.about{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 7%;
+}
+
+.about .ab{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-right: 70px;
+    padding-left: 5%;
+}
+.about .ab h2{
+    color: #009CFF;
+    margin-top: 70px; 
+}
+.about .ab h1{
+    color: #223952;
+    font-size:60px;
+}
+.about .ab span{
+    color: #009CFF;
+}
+.about .ab p{
+    color: #818491;
+    font-size: 25px;
+}
+.about .ab a{
+    text-decoration: none;
+    color: white;
+    border: #009CFF;
+    background-color: #009CFF;
+    height: 60px;
+    width: 200px;
+    font-size: 150%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* -- service -- */
+.service h3{
+    padding-top: 8%;
+    color: #009CFF;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.service h1{
+    color: #23395D;
+    font-size: 50px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.main-box{
+    display: flex;
+    flex-direction: row;
+    margin: 5%;
+}
+.box img{
+    max-width: 90%;
+}
+.main-box h3{
+    color:  #223952;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    background-color: #F3F6FF;
+    text-align: center;
+    padding-bottom: 30px;
+    width: 90%;
+}
+
+/* FAQS section */
+.faqs{
+    margin-left: 5%;
+}
+.faqs h5{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color:#009CFF ;
+    font-size: 20px;   
+}
+.faqs h1{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color:#223952;
+    font-size: 60px;
+}
+
+.faqs .fpart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.faqs h3{
+    margin-top: 40px;
+    color:#223952;
+    font-size: 25px;
+}
+.faqs h4{
+    color:#223952;
+}
+.faqs .fpart #right{
+    color: green;
+}
+.faqs #btn{
+    margin-top: 3%;
+    margin-left: 45%;
+    background-color:#1b73ee;
+    color: white;
+    height: 50px;
+    width: 120px;
+    border: solid;    
+}
+
+/* -- Testimonial -- */
+
+.testi{
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+.testi h5{
+    color:#009CFF;
+    letter-spacing: 0.1rem;
+}
+.testi h1{
+    color: #23395D;
+}
+.testi p{
+    color: #818491;
+    padding-left: 30%;
+    padding-right: 30%;
+}
+.testi h3{
+    color: #23395D;
+}
+
+/* -- Contact -- */
+
+.contact{
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.contact h5{
+    color: #009CFF;
+    font-size: 20px;
+}
+.contact h1{
+    color: #23395D;
+}
+.contact #name{
+    background-color: #F3F6FF;
+    border:0px solid #F3F6ff;
+    height: 70px;
+    width: 350px;
+    padding-left: 10px;
+}
+.contact #email{
+    background-color: #F3F6FF;
+    border:0px solid #F3F6ff;
+    height: 70px;
+    width: 350px;
+    padding-left: 10px;
+}
+.contact #subject{
+    background-color: #F3F6FF;
+    border:0px solid #F3F6ff;
+    height: 70px;
+    width: 700px;
+    padding-left: 10px; 
+}
+.contact #text{
+    background-color: #F3F6FF;
+    color: #818491;
+    border:0px solid #F3F6ff;
+    height: 120px;
+    width: 700px;
+    padding-top: 10px;
+    padding-left: 10px;   
+}
+.contact #smbtn{
+    height: 50px;
+    width: 200px;
+    background-color: #009CFF;
+    border: #009CFF;
+    color: white;
+    font-size: 20px;   
+}
+/* -- footer -- */
+.foot{
+    background-color: #23395D;
+    height: auto;
+    padding-top: 2%;
+    margin-top: 2%;
+    
+}
+.foot .address{
+    background-color: #818491;
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100px;
+    width: 80%;
+    margin-left: 10%;
+}
+.foot .address h5{
+    font-size: 150%;
+    letter-spacing: 0.3rem;
+}
+.foot .address p{
+   font-size: 130%;
+   
+}
+.footcontaint{
+    /* display: flex; */
+    /* justify-content: center; */
+    /* flex-direction: column; */
+    text-align: center;
+    width: 80%;
+    margin-left: 10%;
+    padding-top: 3%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.footcontaint .mainfoot{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+}
+.footcontaint .mainfoot p{
+    color: white;
+}
+.icon #twitter{
+    border: 2px solid white;
+    color: white;
+    padding: 10px;
+}
+.icon #face{
+    border: 2px solid white;
+    color: white;
+    padding: 10px;
+}
+.icon #in{
+    border: 2px solid white;
+    color: white;
+    padding: 10px;
+}
+.icon #insta{
+    border: 2px solid white;
+    color: white;
+    padding: 10px;
+}
+.footcontaint .product{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 50px;
+    width: 80%;
+    /* margin-left: 15%; */
+}
+.footcontaint .product h5{
+    color: #009CFF;
+    font-size: 15px;
+    letter-spacing: 0.2rem;
+}
+.footcontaint .product a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+.footcontaint .news{
+    width: 100%;
+    margin-left: 15%;
+}
+.footcontaint .news h5{
+    color: #009CFF;
+    font-size: 20px;
+    letter-spacing: 0.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.footcontaint .news p{
+    color: white;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.news #email{
+    height: 40px;
+    width: 200px;
+    border: white;
+    padding: 8px;
+    margin-bottom: 10px;
+    
+}
+.news #sign{
+    height: 40px;
+    width: 70px;
+    color: white;
+    background-color: #009CFF;
+    border: #009CFF;
+}
+.foot .domain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    gap: 5px;
+    font-size: 20px;
+    margin-top: 20px;
+}
+.foot .domain span{
+    color: #009CFF;
+}
+.faqs .line{
+    font-size: 100px;
+    height: 100px;
+    color:#009CFF;
+}
+
+@media screen and (max-width: 768px) {
+ 
+label{
+    display: block; 
+}
+header nav ul{       
+    flex-direction: column;
+    position: absolute;
+    top: 75px;
+    left: 0px;
+    /* text-align: center; */
+    width: 100%;
+    background-color: #22395D;
+    display: none;
+    line-height: 2;
+}    
+#click:checked ~ header nav ul{
+    display: block;
+}
+.about{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.about img{
+    width: 96%;
+}
+
+/* -- service -- */
+
+.service .main-box{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+}
+
+/* -- team -- */
+
+.team{
+    padding-top: 40%;  
+}
+ .team .team1{
+    width: 10%;
+}
+.team .team2{
+    width: 90%;
+    padding-left: 15%;
+}
+.team .team3{
+    width: 150%;
+}
+.team .team4{
+    width: 90%;
+    padding-left: 15%;
+}
+
+/* -- faqs -- */
+.faqs #btn{
+    margin-left: 40%;
+}
+
+/* -- foot -- */
+
+.foot .address{
+    font-size: 10px;
+}
+.foot .footcontaint{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.foot .footcontaint .mainfoot{
+    width: 100%;
+}
+.foot .footcontaint .product{
+    margin-left: 60px;
+    padding-top: 20px;
+
+}
+.foot .footcontaint .news{
+   margin-left: 180px;
+    width: 50%;
+    padding-top: 20px;
+}
+.foot .domain{
+    font-size: 16px;
+}
+}
+
+@media screen and (max-width:426px) {
+
+ .hero{
+    width: 560px;
+ }
+    /* .main-content{
+        font-size: 12px;
+        margin: 10px;
+        
+    } */
+
+ /* -- about --  */
+ .about img{
+    width: 540px;
+ }
+
+ /* -- service -- */
+ 
+ .service .main-box{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 550px;
+ }
+
+ /* faqs */
+.faqs h1{
+    font-size: 30px;
+}
+ .faqs .fpart{
+    display: flex;
+    flex-direction: column;
+ }
+ .faqs .fpart .line{
+    display: none;
+ }
+ .faqs .fpart{
+    margin-left: 80px;
+ }
+
+ /* -- Testimonial -- */
+
+ .testi{
+    font-size: 20px;
+ }
+
+ /*  contact */
+ .contact .n-e{
+    width: 50%;
+    line-height: 5;
+ }
+ .contact #subject{
+    width: 82%;
+    margin-left: 140px;
+ }
+ .contact #text{
+    width: 82%;
+    margin-left: 140px;
+ }
+ .contact #smbtn{
+    margin-left: 140px;
+ }
+
+ /*  footer */
+
+ .foot{
+    width: 560px;
+ }
+ .foot .address{
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    font-size: 15px;
+ }
+ .foot .address .ad1{
+    width: 50%;
+ }
+ .foot .footcontaint .product{
+        margin-left: 10px;
+        padding-top: 25px;
+ }
+ .foot .footcontaint .news{
+        width: 80%;
+        margin-left: 50px;
+ }
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
